@@ -1,0 +1,43 @@
+.nav {
+  display: inline-block;
+}
+.nav-list {
+  display: inline-block;
+}
+.nav-list__item {
+  display: inline;
+  font-size: 12px;
+}
+
+.input {
+  background-color: rgb(179, 108, 108);
+  display: block;
+  width: 394px;
+  height: 20px;
+
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.input-notification {
+  color: var(--warning-color);
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.input-search-button {
+  padding: 0;
+  background-color: rgb(40, 149, 54);
+  opacity: 50%;
+  border: none;
+  outline: none;
+}
+
+.magnifying-glass-icon {
+  width: 22px;
+  height: 22px;
+  fill: blueviolet;
+}
