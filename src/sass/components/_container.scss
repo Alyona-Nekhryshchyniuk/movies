@@ -2,11 +2,14 @@
   width: 1280px;
   margin: 0 auto;
   padding: 0px 32px;
-  background-color: rgb(171, 251, 245);
 }
 
 .container__header {
-  background-color: rgb(65, 26, 26);
   padding-top: 40px;
   padding-bottom: 44px;
+}
+
+.container__main {
+  padding-top: 60px;
+  padding-bottom: 60px - 32px;
 }

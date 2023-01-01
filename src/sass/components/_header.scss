@@ -1,24 +1,54 @@
+.header {
+  color: var(--secondary-color);
+  background-image: url('../images/header-bg.png');
+  // background-repeat: no-repeat;
+
+  background-color: rgb(115, 49, 49);
+  background-size: 100%;
+}
 .nav {
-  display: inline-block;
+  // display: inline-block;
+  float: right;
 }
 .nav-list {
-  display: inline-block;
+  font-weight: 500;
+  // display: inline-block;
+  text-transform: uppercase;
+}
+.current {
+  border-bottom: 3px solid var(--warning-color);
 }
 .nav-list__item {
   display: inline;
   font-size: 12px;
 }
+.nav-list__item:last-child {
+  margin-left: 39px;
+}
 
-.input {
-  background-color: rgb(179, 108, 108);
-  display: block;
+.input-container {
+  position: relative;
   width: 394px;
   height: 20px;
-
   margin: 0 auto;
+}
+
+.input::placeholder {
+  font-style: 14px;
+  line-height: 1.14;
+  color: var(--secondary-color);
+}
+.input {
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  height: 100%;
   margin-top: 50px;
   padding: 0;
   box-sizing: content-box;
+  border: none;
+  border-bottom: 0.5px solid #fff;
+  outline: 0px;
 }
 
 .input-notification {
@@ -29,15 +59,20 @@
 }
 
 .input-search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
   padding: 0;
-  background-color: rgb(40, 149, 54);
-  opacity: 50%;
+  background-color: transparent;
   border: none;
   outline: none;
+  width: 12px;
+  height: 12px;
 }
 
-.magnifying-glass-icon {
-  width: 22px;
-  height: 22px;
-  fill: blueviolet;
+.icon-search {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
