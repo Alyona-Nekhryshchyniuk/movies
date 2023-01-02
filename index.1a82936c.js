@@ -1,0 +1,2 @@
+const e=document.querySelector(".film-card-genre "),t=document.querySelector(".film-card"),r=document.querySelector(".production-date"),o=document.querySelector(".other"),n=document.createElement("span");n.classList.add("pattern");let c="Drama, Horrow, Thriller, Documentary, Sci-fi, Advanture,".split(" ").filter((e=>""!==e&&"\n"!==e)),d=t.offsetWidth-(r.offsetWidth+o.offsetWidth),i=[];for(let e=0;e<7&&(n.innerHTML=c[e],t.appendChild(n),d-=n.offsetWidth,i.push(e),!(d<30));e+=1);let l=i.length-1;e.innerHTML=c.slice(0,l).join(" ");
+//# sourceMappingURL=index.1a82936c.js.map
