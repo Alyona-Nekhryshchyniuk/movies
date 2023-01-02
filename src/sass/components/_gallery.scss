@@ -12,20 +12,46 @@
 }
 
 .film-card {
+  position: relative;
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
+}
+.pattern {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  color: transparent;
 }
 .film-card-name {
   @extend .film-card;
   margin-top: 12px;
   text-transform: uppercase;
 }
-.film-card-genre {
-  display: block;
-  width: 100%;
-  height: 30px;
-  @extend .film-card;
+.genre-date-str {
   color: var(--brightest-color);
-  text-overflow: clip;
+  @extend .film-card;
+}
+.film-card-genre {
+  width: auto;
+
+  display: inline-block;
+
+  white-space: wrap;
+  // width: 275px;
+
+  height: 24px;
+  // text-overflow: clip;
+}
+.other {
+  vertical-align: top;
+}
+.production-date {
+  vertical-align: top;
+  display: inline-block;
+  border-left: 2px solid var(--brightest-color);
+  padding-left: 6px;
+  margin-left: 4px;
 }
